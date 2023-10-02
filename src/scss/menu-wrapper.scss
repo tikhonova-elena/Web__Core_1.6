@@ -1,0 +1,10 @@
+.menu-wrapper {
+  width: 100%;
+  margin-bottom: 16px;
+  &__fade-right {
+    right: 16px;
+    width: 24px;
+    height: 40px;
+    z-index: 2;
+  }
+}

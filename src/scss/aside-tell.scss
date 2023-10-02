@@ -1,0 +1,116 @@
+.aside-tell {
+  position: absolute;
+  left: 200%;
+  transition: left 0.5s linear;
+  z-index: 3;
+  height: 100vh;
+
+  &__visible {
+    left: calc(100% - 320px);
+
+    @media (min-width: 440px) {
+      left: calc(100% - 440px);
+    }
+  }
+
+  &__pop-up {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 320px;
+    height: 100%;
+    background-color: $clr-bg;
+    box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.20);
+    z-index: 3;
+    padding: 32px;
+
+    @media (min-width: 440px) {
+      width: 440px;
+    }
+  }
+
+  &__highlight {
+  }
+
+  &__title {
+    display: block;
+    color: $clr-dark;
+    font-size: $fs-24;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    background-color: inherit;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: inherit;
+
+    input {
+      width: 376px;
+      height: 48px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: 1px solid #EAEAEA;
+      background: #FFF;
+      padding-left: 16px;
+    }
+
+    textarea {
+      border-radius: 8px;
+      border: 1px solid #EAEAEA;
+      background: #FFF;
+      width: 376px;
+      height: 118px;
+      margin-bottom: 16px;
+      padding-left: 16px;
+    }
+  }
+  &__description {
+    color: $clr-grey;
+    font-size: $fs-14;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    width: 376px;
+    margin-bottom: 16px;
+
+    span {
+      color: $clr-pink;
+      font-size: $fs-14;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px 4px 12px;
+    background-color: $clr-pink;
+    border-radius: 50px;
+    width: 119px;
+    align-self: flex-end;
+    margin-right: 64px;
+
+    span {
+      color: #FFF;
+      text-align: right;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
+
+
+}
+

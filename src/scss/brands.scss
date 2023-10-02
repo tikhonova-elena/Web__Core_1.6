@@ -1,0 +1,24 @@
+.brands {
+  margin-bottom: 50px;
+  position: relative;
+
+  &__fade {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 24px;
+    background: linear-gradient(270deg, $clr-bg-grey 16.84%, rgba(248, 248, 248, 0.00) 100%);
+    right: 0;
+    z-index: 15;
+  }
+
+  &__read-more {
+    display: none;
+    margin-left: 16px;
+    margin-top: 16px;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+}

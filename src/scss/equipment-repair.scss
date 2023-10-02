@@ -1,0 +1,14 @@
+.equipment-repair {
+  margin-bottom: 50px;
+
+  &__read-more {
+    display: none;
+    margin-left: 16px;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+
+}
+

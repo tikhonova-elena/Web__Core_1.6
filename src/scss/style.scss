@@ -1,0 +1,100 @@
+
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./read-more.scss";
+@import "./aside-left.scss";
+@import "./aside-tell";
+@import "./aside-settings";
+@import "./aside-menu.scss";
+@import "./fog-of-war-left";
+@import "./fog-of-war-right";
+@import "./aside-menu.scss";
+@import "./header.scss";
+@import "./menu-wrapper.scss";
+@import "./menu.scss";
+@import "./main.scss";
+@import "./lang.scss";
+@import "./settings.scss";
+@import "./search.scss";
+@import "./contacts.scss";
+@import "./banner.scss";
+@import "./description.scss";
+@import "./highlight.scss";
+@import "./companies.scss";
+@import "./brands.scss";
+@import "./swiper-pagination.scss";
+@import "./equipment-repair.scss";
+@import "./technique.scss";
+@import "./title.scss";
+@import "./prices.scss";
+@import "./footer.scss";
+@import "./swiper-prices.scss";
+@import "./fade.scss";
+@import "./tell-close.scss";
+@import "./settings-close.scss";
+@import "./section-title.scss";
+
+
+* {
+  font-family: "TT Lakes", sans-serif;
+  font-size: $fs-16;
+  margin: 0;
+  background: $clr-bg-grey;
+  color: $clr-dark;
+  text-decoration: none;
+  scrollbar-width: none;
+}
+
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-thumb:vertical {
+  width: 0;
+  height: 0;
+}
+
+
+li {
+  list-style: none;
+}
+
+ul,
+p {
+  padding: 0;
+  background-color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+svg,
+img,
+a,
+span {
+  background: transparent;
+}
+
+h1 {
+  justify-content: flex-start;
+  color: $clr-dark;
+  font-size: $fs-28;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+
+h3 {
+  background-color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

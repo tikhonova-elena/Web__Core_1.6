@@ -1,0 +1,9 @@
+.tell-close {
+  position: absolute;
+  top: 32px;
+  left: 16px;
+
+  @media (min-width: 520px) {
+    left: -72px;
+  }
+}

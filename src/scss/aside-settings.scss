@@ -4,11 +4,14 @@
   transition: left 0.5s linear;
   z-index: 3;
   height: 100vh;
+  width: 320px;
+  display: none;
 
   &__visible {
+    display: block;
     left: calc(100% - 320px);
 
-    @media (min-width: 440px) {
+    @media (min-width: 520px) {
       left: calc(100% - 440px);
     }
   }
@@ -18,19 +21,26 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-width: 320px;
+    width: 320px;
     height: 100%;
     background-color: $clr-bg;
     box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.20);
     z-index: 3;
-    padding: 32px;
+    padding: 16px;
 
-    @media (min-width: 440px) {
+    @media (min-width: 520px) {
       width: 440px;
+      padding: 32px;
     }
   }
 
+
   &__highlight {
+    top: 106px;
+
+    @media (min-width: 520px) {
+      top: 32px;
+    }
   }
 
   &__title {
@@ -39,9 +49,13 @@
     font-size: $fs-24;
     font-weight: 700;
     line-height: 32px;
-    margin-top: 16px;
+    margin-top: 104px;
     margin-bottom: 24px;
     background-color: inherit;
+
+    @media (min-width: 520px) {
+      margin-top: 16px;
+    }
   }
 
   form {
@@ -52,13 +66,17 @@
     background-color: inherit;
 
     input {
-      width: 376px;
+      width: 288px;
       height: 48px;
       margin-bottom: 16px;
       border-radius: 8px;
       border: 1px solid #EAEAEA;
       background: #FFF;
       padding-left: 16px;
+
+      @media (min-width: 520px) {
+       width: 376px;
+      }
     }
   }
   &__description {
@@ -67,8 +85,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
-    width: 376px;
+    width: 288px;
     margin-bottom: 16px;
+
+    @media (min-width: 520px) {
+      width: 376px;
+    }
 
     span {
       color: $clr-pink;
@@ -88,7 +110,11 @@
     border-radius: 50px;
     width: 119px;
     align-self: flex-end;
-    margin-right: 64px;
+    margin-right: 16px;
+
+    @media (min-width: 520px) {
+      margin-right: 46px;
+    }
 
     span {
       color: #FFF;

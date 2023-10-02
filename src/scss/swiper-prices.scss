@@ -1,7 +1,10 @@
 .swiper-prices {
-  padding-right: 16px;
-  margin: 0 16px;
-  overflow: hidden;
-  border-radius: 6px;
-  width: 95%;
+  @media (min-width: 768px) {
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 0;
+  }
+
 }

@@ -3,9 +3,7 @@
   @media (min-width: 767px) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
+    justify-content: flex-start;
   }
 
   &__wrapper{

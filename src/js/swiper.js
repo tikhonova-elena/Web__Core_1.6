@@ -158,6 +158,10 @@ window.addEventListener('DOMContentLoaded', () => {
           slidesPerView: 2.3,
           enabled: true,
         },
+        768: {
+          slidesPerView: 2.3,
+          enabled: true,
+        },
       },
     },
     someFunc

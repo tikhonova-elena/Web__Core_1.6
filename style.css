@@ -128,15 +128,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: inherit; }
+    background-color: inherit;
+    padding-right: 16px; }
     .aside-tell form input {
       width: 288px;
       height: 48px;
       margin-bottom: 16px;
       border-radius: 8px;
       border: 1px solid #EAEAEA;
-      background: #FFF;
-      padding-left: 16px; }
+      background: #FFF; }
       @media (min-width: 520px) {
         .aside-tell form input {
           width: 376px; } }
@@ -146,8 +146,7 @@
       background: #FFF;
       width: 288px;
       height: 118px;
-      margin-bottom: 16px;
-      padding-left: 16px; }
+      margin-bottom: 16px; }
       @media (min-width: 520px) {
         .aside-tell form textarea {
           width: 376px; } }
@@ -241,15 +240,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: inherit; }
+    background-color: inherit;
+    padding-right: 16px; }
     .aside-settings form input {
       width: 288px;
       height: 48px;
       margin-bottom: 16px;
       border-radius: 8px;
       border: 1px solid #EAEAEA;
-      background: #FFF;
-      padding-left: 16px; }
+      background: #FFF; }
       @media (min-width: 520px) {
         .aside-settings form input {
           width: 376px; } }

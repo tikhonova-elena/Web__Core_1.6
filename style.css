@@ -136,7 +136,8 @@
       margin-bottom: 16px;
       border-radius: 8px;
       border: 1px solid #EAEAEA;
-      background: #FFF; }
+      background: #FFF;
+      padding-left: 16px; }
       @media (min-width: 520px) {
         .aside-tell form input {
           width: 376px; } }
@@ -146,7 +147,8 @@
       background: #FFF;
       width: 288px;
       height: 118px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      padding-left: 16px; }
       @media (min-width: 520px) {
         .aside-tell form textarea {
           width: 376px; } }
@@ -189,7 +191,7 @@
       line-height: 24px;
       text-transform: uppercase; }
 
-.aside-settings {
+.aside-chat {
   position: absolute;
   left: 200%;
   transition: left 0.5s linear;
@@ -197,13 +199,13 @@
   height: 100vh;
   width: 320px;
   display: none; }
-  .aside-settings__visible {
+  .aside-chat__visible {
     display: block;
     left: calc(100% - 320px); }
     @media (min-width: 520px) {
-      .aside-settings__visible {
+      .aside-chat__visible {
         left: calc(100% - 440px); } }
-  .aside-settings__pop-up {
+  .aside-chat__pop-up {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -215,15 +217,15 @@
     z-index: 3;
     padding: 16px; }
     @media (min-width: 520px) {
-      .aside-settings__pop-up {
+      .aside-chat__pop-up {
         width: 440px;
         padding: 32px; } }
-  .aside-settings__highlight {
+  .aside-chat__highlight {
     top: 106px; }
     @media (min-width: 520px) {
-      .aside-settings__highlight {
+      .aside-chat__highlight {
         top: 32px; } }
-  .aside-settings__title {
+  .aside-chat__title {
     display: block;
     color: #1B1C21;
     font-size: 24px;
@@ -233,26 +235,27 @@
     margin-bottom: 24px;
     background-color: inherit; }
     @media (min-width: 520px) {
-      .aside-settings__title {
+      .aside-chat__title {
         margin-top: 16px; } }
-  .aside-settings form {
+  .aside-chat form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     background-color: inherit;
     padding-right: 16px; }
-    .aside-settings form input {
+    .aside-chat form input {
       width: 288px;
       height: 48px;
       margin-bottom: 16px;
       border-radius: 8px;
       border: 1px solid #EAEAEA;
-      background: #FFF; }
+      background: #FFF;
+      padding-left: 16px; }
       @media (min-width: 520px) {
-        .aside-settings form input {
+        .aside-chat form input {
           width: 376px; } }
-  .aside-settings__description {
+  .aside-chat__description {
     color: #7E7E82;
     font-size: 14px;
     font-style: normal;
@@ -261,15 +264,15 @@
     width: 288px;
     margin-bottom: 16px; }
     @media (min-width: 520px) {
-      .aside-settings__description {
+      .aside-chat__description {
         width: 376px; } }
-    .aside-settings__description span {
+    .aside-chat__description span {
       color: #FF3E79;
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
       line-height: 16px; }
-  .aside-settings__button {
+  .aside-chat__button {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,9 +283,9 @@
     align-self: flex-end;
     margin-right: 16px; }
     @media (min-width: 520px) {
-      .aside-settings__button {
+      .aside-chat__button {
         margin-right: 46px; } }
-    .aside-settings__button span {
+    .aside-chat__button span {
       color: #FFF;
       text-align: right;
       font-size: 12px;
@@ -661,6 +664,14 @@ main {
     .companies {
       grid-template-columns: repeat(4, 240px);
       grid-template-rows: repeat(3, 1fr); } }
+  @media (min-width: 1720px) {
+    .companies {
+      grid-template-columns: repeat(5, 240px);
+      grid-template-rows: repeat(3, 1fr); } }
+  @media (min-width: 1980px) {
+    .companies {
+      grid-template-columns: repeat(6, 240px);
+      grid-template-rows: repeat(3, 1fr); } }
   @media (min-width: 768px) {
     .companies__open {
       height: 100%; } }
@@ -964,12 +975,12 @@ main {
     .tell-close {
       left: -72px; } }
 
-.settings-close {
+.chat-close {
   position: absolute;
   top: 32px;
   left: 16px; }
   @media (min-width: 520px) {
-    .settings-close {
+    .chat-close {
       left: -72px; } }
 
 .section-title {

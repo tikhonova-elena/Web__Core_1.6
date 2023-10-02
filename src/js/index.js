@@ -3,6 +3,6 @@ import './swiper'
 import './read-more_click'
 import './burger_click'
 import './tell_click'
-import './settings_click'
+import './chat_click'
 
 console.log('Works!')

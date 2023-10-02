@@ -32,7 +32,7 @@
 .aside-left {
   position: relative;
   left: -100%;
-  transition: left 0.8s linear;
+  transition: left 0.5s linear;
   box-shadow: none;
   z-index: 2; }
   .aside-left__visible {
@@ -82,10 +82,13 @@
   left: 200%;
   transition: left 0.5s linear;
   z-index: 3;
-  height: 100vh; }
+  height: 100vh;
+  width: 320px;
+  display: none; }
   .aside-tell__visible {
-    left: calc(100% - 320px); }
-    @media (min-width: 440px) {
+    left: calc(100% - 320px);
+    display: block; }
+    @media (min-width: 520px) {
       .aside-tell__visible {
         left: calc(100% - 440px); } }
   .aside-tell__pop-up {
@@ -98,19 +101,28 @@
     background-color: #FFFFFF;
     box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
     z-index: 3;
-    padding: 32px; }
-    @media (min-width: 440px) {
+    padding: 16px; }
+    @media (min-width: 520px) {
       .aside-tell__pop-up {
-        width: 440px; } }
+        width: 440px;
+        padding: 32px; } }
+  .aside-tell__highlight {
+    top: 106px; }
+    @media (min-width: 520px) {
+      .aside-tell__highlight {
+        top: 32px; } }
   .aside-tell__title {
     display: block;
     color: #1B1C21;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
-    margin-top: 16px;
+    margin-top: 104px;
     margin-bottom: 24px;
     background-color: inherit; }
+    @media (min-width: 520px) {
+      .aside-tell__title {
+        margin-top: 16px; } }
   .aside-tell form {
     display: flex;
     flex-direction: column;
@@ -118,29 +130,38 @@
     align-items: flex-start;
     background-color: inherit; }
     .aside-tell form input {
-      width: 376px;
+      width: 288px;
       height: 48px;
       margin-bottom: 16px;
       border-radius: 8px;
       border: 1px solid #EAEAEA;
       background: #FFF;
       padding-left: 16px; }
+      @media (min-width: 520px) {
+        .aside-tell form input {
+          width: 376px; } }
     .aside-tell form textarea {
       border-radius: 8px;
       border: 1px solid #EAEAEA;
       background: #FFF;
-      width: 376px;
+      width: 288px;
       height: 118px;
       margin-bottom: 16px;
       padding-left: 16px; }
+      @media (min-width: 520px) {
+        .aside-tell form textarea {
+          width: 376px; } }
   .aside-tell__description {
     color: #7E7E82;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
-    width: 376px;
+    width: 288px;
     margin-bottom: 16px; }
+    @media (min-width: 520px) {
+      .aside-tell__description {
+        width: 376px; } }
     .aside-tell__description span {
       color: #FF3E79;
       font-size: 14px;
@@ -156,7 +177,10 @@
     border-radius: 50px;
     width: 119px;
     align-self: flex-end;
-    margin-right: 64px; }
+    margin-right: 16px; }
+    @media (min-width: 520px) {
+      .aside-tell__button {
+        margin-right: 46px; } }
     .aside-tell__button span {
       color: #FFF;
       text-align: right;
@@ -171,10 +195,13 @@
   left: 200%;
   transition: left 0.5s linear;
   z-index: 3;
-  height: 100vh; }
+  height: 100vh;
+  width: 320px;
+  display: none; }
   .aside-settings__visible {
+    display: block;
     left: calc(100% - 320px); }
-    @media (min-width: 440px) {
+    @media (min-width: 520px) {
       .aside-settings__visible {
         left: calc(100% - 440px); } }
   .aside-settings__pop-up {
@@ -182,24 +209,33 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-width: 320px;
+    width: 320px;
     height: 100%;
     background-color: #FFFFFF;
     box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
     z-index: 3;
-    padding: 32px; }
-    @media (min-width: 440px) {
+    padding: 16px; }
+    @media (min-width: 520px) {
       .aside-settings__pop-up {
-        width: 440px; } }
+        width: 440px;
+        padding: 32px; } }
+  .aside-settings__highlight {
+    top: 106px; }
+    @media (min-width: 520px) {
+      .aside-settings__highlight {
+        top: 32px; } }
   .aside-settings__title {
     display: block;
     color: #1B1C21;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
-    margin-top: 16px;
+    margin-top: 104px;
     margin-bottom: 24px;
     background-color: inherit; }
+    @media (min-width: 520px) {
+      .aside-settings__title {
+        margin-top: 16px; } }
   .aside-settings form {
     display: flex;
     flex-direction: column;
@@ -207,21 +243,27 @@
     align-items: flex-start;
     background-color: inherit; }
     .aside-settings form input {
-      width: 376px;
+      width: 288px;
       height: 48px;
       margin-bottom: 16px;
       border-radius: 8px;
       border: 1px solid #EAEAEA;
       background: #FFF;
       padding-left: 16px; }
+      @media (min-width: 520px) {
+        .aside-settings form input {
+          width: 376px; } }
   .aside-settings__description {
     color: #7E7E82;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
-    width: 376px;
+    width: 288px;
     margin-bottom: 16px; }
+    @media (min-width: 520px) {
+      .aside-settings__description {
+        width: 376px; } }
     .aside-settings__description span {
       color: #FF3E79;
       font-size: 14px;
@@ -237,7 +279,10 @@
     border-radius: 50px;
     width: 119px;
     align-self: flex-end;
-    margin-right: 64px; }
+    margin-right: 16px; }
+    @media (min-width: 520px) {
+      .aside-settings__button {
+        margin-right: 46px; } }
     .aside-settings__button span {
       color: #FFF;
       text-align: right;
@@ -713,9 +758,7 @@ main {
   .prices {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    width: 100%; } }
+    justify-content: flex-start; } }
 
 .prices__wrapper {
   display: flex;
@@ -902,12 +945,13 @@ main {
         text-align: right;
         width: 33.33%; } }
 
-.swiper-prices {
-  padding-right: 16px;
-  margin: 0 16px;
-  overflow: hidden;
-  border-radius: 6px;
-  width: 95%; }
+@media (min-width: 768px) {
+  .swiper-prices {
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 0; } }
 
 .fade {
   background: linear-gradient(270deg, #F8F8F8 0.04%, rgba(248, 248, 248, 0) 100%);
@@ -990,10 +1034,6 @@ h1 {
 
 h3 {
   background-color: inherit; }
-
-body {
-  margin: 0;
-  padding: 0; }
 
 
 /*# sourceMappingURL=style.css.map*/

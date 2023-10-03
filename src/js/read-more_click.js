@@ -69,15 +69,4 @@ readMoreDescription.addEventListener('click', () => {
   }
 
 })
-//read-more technique click
 
-readMoreDescription.addEventListener('click', () => {
-  const isOpenedDescription = descriptionOtherText.classList.contains("description__open");
-
-  if (isOpenedDescription) {
-    descriptionOtherText.classList.remove('description__open');
-  } else {
-    descriptionOtherText.classList.add('description__open');
-  }
-
-})

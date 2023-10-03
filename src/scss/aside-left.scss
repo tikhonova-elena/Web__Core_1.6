@@ -12,7 +12,7 @@
 
   @media (min-width: 1120px) {
     left: 0;
-    transition: left 0.3s linear;
+    transition: left 0.3s, linear;
   }
 
   &__pop-up {

@@ -1,15 +1,13 @@
 .aside-chat {
   position: absolute;
   left: 200%;
-  transition: left 0.5s linear;
   z-index: 3;
   height: 100vh;
   width: 320px;
-  display: none;
 
   &__visible {
-    display: block;
     left: calc(100% - 320px);
+    transition: left 0.5s linear;
 
     @media (min-width: 520px) {
       left: calc(100% - 440px);

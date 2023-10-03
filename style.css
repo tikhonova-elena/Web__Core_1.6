@@ -18,6 +18,33 @@
   font-style: normal;
   src: local("TTLakes-Medium"), url(./fonts/TTLakes-Medium.woff) format("woff"), url(./fonts/TTLakes-Medium.ttf) format("ttf"); }
 
+.fog-of-war-left {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  top: 0; }
+  .fog-of-war-left__visible {
+    opacity: 0.9;
+    transition: opacity 1s, linear 0.8s;
+    z-index: 1; }
+  @media (min-width: 1120px) {
+    .fog-of-war-left {
+      display: none; } }
+
+.fog-of-war-right {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0;
+  top: 0; }
+  .fog-of-war-right__visible {
+    opacity: 0.9;
+    transition: opacity 1s, linear 0.8s;
+    z-index: 2; }
+
 .read-more {
   display: flex;
   justify-content: flex-start;
@@ -40,7 +67,7 @@
   @media (min-width: 1120px) {
     .aside-left {
       left: 0;
-      transition: left 0.3s linear; } }
+      transition: left 0.3s, linear; } }
   .aside-left__pop-up {
     position: fixed;
     display: flex;
@@ -80,14 +107,12 @@
 .aside-tell {
   position: absolute;
   left: 200%;
-  transition: left 0.5s linear;
   z-index: 3;
   height: 100vh;
-  width: 320px;
-  display: none; }
+  width: 320px; }
   .aside-tell__visible {
     left: calc(100% - 320px);
-    display: block; }
+    transition: left 0.5s linear; }
     @media (min-width: 520px) {
       .aside-tell__visible {
         left: calc(100% - 440px); } }
@@ -194,14 +219,12 @@
 .aside-chat {
   position: absolute;
   left: 200%;
-  transition: left 0.5s linear;
   z-index: 3;
   height: 100vh;
-  width: 320px;
-  display: none; }
+  width: 320px; }
   .aside-chat__visible {
-    display: block;
-    left: calc(100% - 320px); }
+    left: calc(100% - 320px);
+    transition: left 0.5s linear; }
     @media (min-width: 520px) {
       .aside-chat__visible {
         left: calc(100% - 440px); } }
@@ -348,41 +371,6 @@
   @media (min-width: 1120px) {
     .aside-menu__burger {
       display: none; } }
-
-.fog-of-war-left {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  top: 0;
-  display: none; }
-  .fog-of-war-left__visible {
-    display: block;
-    opacity: 0.9;
-    /*
-    transition: opacity 1s linear 0.8s;
-    */
-    z-index: 1; }
-  @media (min-width: 1120px) {
-    .fog-of-war-left {
-      display: none; } }
-
-.fog-of-war-right {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: -10;
-  opacity: 0;
-  top: 0;
-  display: none; }
-  .fog-of-war-right__visible {
-    display: block;
-    opacity: 0.9;
-    /*
-      transition: opacity 0.5s linear 0.8s;
-      */
-    z-index: 2; }
 
 .aside-menu {
   display: flex;
@@ -614,7 +602,8 @@ main {
     height: 176px;
     background-image: url(./static/banner.png);
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-top: 16px; }
     @media (min-width: 768px) {
       .description__img {
         min-height: 280px; } }
